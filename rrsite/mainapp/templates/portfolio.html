@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style='text-shadow: 1px 1px 3px black; font-weight: 600'>Weblog</h2>
+                <p class="mb-0" style='text-shadow: 1px 1px 3px black; font-weight: 600'>A basic weblog using python, django and bootstrap</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="\static\img\weblog.jpg") alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style='text-shadow: 1px 1px 3px black; font-weight: 600'>Royal Hotels</h2>
+                <p class="mb-0" style='text-shadow: 1px 1px 3px black; font-weight: 600'>A simple python and django project to order meals from a hotel.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="\static\img\royalhotels.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style='text-shadow: 1px 1px 3px black; font-weight: 600'>Tic Tac Toe</h2>
+                <p class="mb-0" style='text-shadow: 1px 1px 3px black; font-weight: 600'>A web application game using htmls, css and javascript.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="\static\img\tictactoe.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style='text-shadow: 1px 1px 3px black; font-weight: 600'>Pizza Order</h2>
+                <p class="mb-0" style='text-shadow: 1px 1px 3px black; font-weight: 600'>A website using html, css and javascript to order a pizza with your selection of toppings showing the price based upon your order.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="\static\img\pizza.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='container text-center'>
+        <div class='row'>
+          <div class="col-lg-10 mx-auto"><br><br>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="{% url 'socials' %}">Socials</a>
+          </div>
+        </div>
+      </div>
+</section>
+
+{% endblock content %}

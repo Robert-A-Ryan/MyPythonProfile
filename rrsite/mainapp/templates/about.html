@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>About Me</h2>
+          <p class="lead mb-5">My name is Robert Ryan.<br>I am a software developer who loves finding solutions. As a father of two, I enjoy time with my family and activities outdoors.<br><br>I am currently attending <a href="https://www.learncodeanywhere.com" target="-blank">The Tech Academy</a>'s Software Developer Boot Camp, and I have completed the Computer & Technology Basics, Overview of Software Development, Version Control (GitHub), HTML5 and CSS3, JavaScript and Database & SQL courses. I am continuing my training in the following web and programming languages: Python, and C# with .NET.<br><br>I will be a full-stack developer and would love to work with you on your project. Contact me below.</a>!</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="{% url 'portfolio' %}">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
