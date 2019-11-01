@@ -1,1 +1,1 @@
-web: gunicorn rrsite/rrsite/wsgi:application --preload --workers 1
+web: gunicorn rrprofile.wsgi:application --preload --workers 1
