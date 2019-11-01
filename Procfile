@@ -1,1 +1,1 @@
-web: gunicorn rrsite.wsgi
+web: gunicorn rrsite/rrsite.wsgi
