@@ -59,6 +59,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+IGNORABLE_404_URLS = [re.compile(r'^/favicon.ico$')]
+
 ROOT_URLCONF = 'rrsite.urls'
 
 TEMPLATES = [
