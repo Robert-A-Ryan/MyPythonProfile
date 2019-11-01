@@ -31,9 +31,9 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'xn^8bjc0ex(u5k15c)mhrmmb4+8l*v8%nv)!+(tf-tpx*lkkkd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rrprofilesite.herokuapp.com']
 
 
 # Application definition
