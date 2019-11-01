@@ -60,7 +60,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-IGNORABLE_404_URLS = [re.compile(r'^/favicon.ico$')]
+IGNORABLE_404_URLS = [
+    re.compile(r'\.(cgi|php|pl)$'),
+    re.compile(r'^/favicon.ico$')
+    ]
 
 ROOT_URLCONF = 'rrsite.urls'
 
