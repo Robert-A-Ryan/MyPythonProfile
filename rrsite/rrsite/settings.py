@@ -28,10 +28,11 @@ STATICFILES_DIRS = (
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'xn^8bjc0ex(u5k15c)mhrmmb4+8l*v8%nv)!+(tf-tpx*lkkkd'
+#SECRET_KEY = 'xn^8bjc0ex(u5k15c)mhrmmb4+8l*v8%nv)!+(tf-tpx*lkkkd'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['rrprofilesite.herokuapp.com']
 
