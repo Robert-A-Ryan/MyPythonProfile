@@ -1,1 +1,1 @@
-web: gunicorn rrsite/rrsite.wsgi
+web: gunicorn rrsite/rrsite.wsgi --log-file - --log-level debug
